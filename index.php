@@ -394,7 +394,7 @@
                         <p class="mb-0">Développée par David Busakay 😎</p>
                     </div>
                     <div class="modal-footer border-0 pt-0">
-                        <a href="" class="btn btn-success w-100">Voir le code source</a>
+                        <a href="https://github.com/DavidBusakay/todolist" class="btn btn-success w-100">Voir le code source</a>
                     </div>
                 </div>
             </div>
