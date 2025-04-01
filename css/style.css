@@ -1,0 +1,155 @@
+:root {
+    --bg-color-default: white;
+
+    --text-regular: "Poppins-regular", Arial;
+    --text-bold: "Poppins-bold", Arial;
+}
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Poppins-regular";
+    src: url(../font/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Poppins-bold";
+    src: url(../font/Poppins-Bold.ttf);
+}
+
+::selection {
+    background-color: black;
+    color: white;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(181, 181, 181);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(139, 139, 139);
+}
+
+html,
+#collectionsList,
+#tasksList {
+    scroll-behavior: smooth;
+}
+
+body {
+    /* background-color: var(--bg-color-default); */
+    color: black;
+    font-family: var(--text-regular);
+}
+
+input.form-control,
+input.form-control:focus {
+    background-color: var(--bg-color-default);
+}
+
+ul li {
+    list-style: none;
+}
+
+.logo {
+    max-width: 70px;
+}
+
+.bg-blur {
+    backdrop-filter: blur(8px);
+}
+
+.text-bold {
+    font-family: var(--text-bold);
+    color: black;
+}
+
+/* TabList */
+
+.tab-list {
+    margin-bottom: 10px;
+}
+
+.tab-list ul li button.btn {
+    font-size: 0.7rem;
+    border-radius: 0.285rem;
+    padding: 0.2rem 0.55rem;
+}
+
+.tab-list ul li button,
+.tab-list ul li button.btn:active {
+    color: #ffc107;
+    border: 1px solid #ffc107;
+}
+
+.tab-list ul li button:hover {
+    color: black;
+    background-color: #ffc107;
+    border: 1px solid #ffc107;
+}
+
+.tab-list ul li button:active {
+    background-color: #ffc107;
+    border: 1px solid #ffc107;
+}
+
+.tab-list ul li button.active {
+    background-color: #ffc107;
+    border: 1px solid #ffc107;
+}
+
+.tab-list ul li button.active:hover {
+    background-color: #ffca2c;
+    border: 1px solid #ffca2c;
+}
+
+.tab-list ul li button.active:active {
+    background-color: #ffcd39;
+    color: black;
+    border: 1px solid #ffc720;
+}
+
+
+.task .task-text {
+    background-color: rgb(231, 241, 251);
+    transition: all 0.2s ease-in-out;
+}
+
+.task .task-text:hover {
+    background-color: rgb(224, 238, 251);
+}
+
+.task .task-text-completed {
+    background-color: rgb(220, 220, 220);
+    transition: all 0.2s ease-in-out;
+}
+
+.msg {
+    position: relative;
+}
+
+.emoji {
+    position: absolute;
+    top: 0;
+    right: -35px;
+    animation-fill-mode: both;
+    animation: emoji 1s 0s linear infinite;
+}
+
+@keyframes emoji {
+    0%, 100% {
+        transform: translateY(-8px);
+    }
+    50% {
+        transform: translateY(-2px);
+    }
+}
